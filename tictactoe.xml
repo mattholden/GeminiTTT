@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+
+<servicename>Tic Tac Toe</servicename>
+<serviceid>3</serviceid>
+
+<allow-get-requests>true</allow-get-requests>
+<require-https>false</require-https>
+
+<database-user>postgres</database-user>
+<database-password>DevBoxOnly</database-password>
+<database-path>jdbc://postgresql://localhost/gemini</database-path>
+<database-driver>org.postgresql.Driver</database-driver>
+
+<email-sender>support@darkenedsky.com</email-sender>
+<email-server></email-server>
+<email-password></email-password>
+<email-user></email-user>
+<email-replyto></email-replyto>
+
+<forgot-password-text-template></forgot-password-text-template>
+<forgot-password-html-template></forgot-password-html-template>
+<forgot-password-subject></forgot-password-subject>
+
+<verify-email-text-template></verify-email-text-template>
+<verify-email-html-template></verify-email-html-template>
+<verify-email-subject></verify-email-subject>
+
+
+</settings>
