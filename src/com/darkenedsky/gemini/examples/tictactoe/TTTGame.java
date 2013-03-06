@@ -25,7 +25,7 @@ public class TTTGame extends Game<TTTCharacter> {
 	public TTTGame(long id, Message m, Player p) throws Exception {
 		super(id, m, p, TTTCharacter.class);
 		
-		handlers.put(MOVE, new Handler(this, Handler.ON_YOUR_TURN, TURN_START) { 
+		Handler move = new Handler(this) { 
 			
 			@Override
 			public void processMessage(Message m, Player p) throws Exception { 
@@ -43,8 +43,9 @@ public class TTTGame extends Game<TTTCharacter> {
 				startNewTurn();
 
 			}
-		});
-		
+		};
+		move.getGeneralValidator().setPhases(TURN_START);
+		handlers.put(MOVE, move);
 	}
 
 
